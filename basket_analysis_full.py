@@ -13,7 +13,7 @@ from pyspark.sql import types as T
 # %%
 
 # ---------- Parameters (tune here) ----------
-INPUT_PATH = "A:\My project\Retail Analyitcs\Data\Retail_pos_basket_data.csv.csv"
+INPUT_PATH = "Data/Retail_pos_basket_data.csv.csv"
 OUTPUT_DIR = "/content/ouput"   # will be created if not exists
 
 # %%
