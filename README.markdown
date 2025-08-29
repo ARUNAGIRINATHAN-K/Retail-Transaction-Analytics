@@ -6,8 +6,8 @@ This repository contains a PySpark implementation of basket analysis using the F
 ![Code Coverage](https://img.shields.io/badge/coverage-80%25-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
-![Repo Size](https://img.shields.io/github/repo-size/your_username/basket-analysis)
-![Issues](https://img.shields.io/github/issues/your_username/basket-analysis)
+![Repo Size](https://img.shields.io/github/repo-size/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics)
+![Issues](https://img.shields.io/github/issues/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics)
 
 ## Overview
 
