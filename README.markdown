@@ -2,7 +2,7 @@
 
 This repository contains a PySpark implementation of basket analysis using the FP-Growth algorithm to identify frequently bought item combinations in retail transaction data. The project analyzes a dataset of ~10,000 transactions to uncover patterns like `{Diapers} → {Popcorn}` and category-level trends (e.g., `{Snacks, Beverages}`).
 
-![Build Status](https://github.com/your_username/basket-analysis/actions/workflows/main.yml/badge.svg)
+![Build Status](https://github.com/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics/actions/workflows/main.yml/badge.svg)
 ![Code Coverage](https://img.shields.io/badge/coverage-80%25-green)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
