@@ -14,7 +14,7 @@ from pyspark.sql import types as T
 
 # ---------- Parameters (tune here) ----------
 INPUT_PATH = "Data/Retail_pos_basket_data.csv.csv"
-OUTPUT_DIR = "/content/ouput"   # will be created if not exists
+OUTPUT_DIR = "Output"   # will be created if not exists
 
 # %%
 
