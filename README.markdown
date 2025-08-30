@@ -7,6 +7,8 @@ This repository contains a PySpark implementation of basket analysis using the F
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics)
 ![Issues](https://img.shields.io/github/issues/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics/blob/main/Basket_Analysis.ipynb)
+[![Kaggle Dataset](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/arunsworkspace/retail-pos-dataset-for-market-basket-analysis)
 
 ## Overview
 
