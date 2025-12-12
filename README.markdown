@@ -3,54 +3,89 @@
 ![banner](IMG/RETAIL.png)
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/YOUR_COLAB_LINK_HERE)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Apache Spark](https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)](https://spark.apache.org/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**End-to-end retail analytics powered by PySpark & FP-Growth algorithm**
+**A powerful web-based analytics platform for retail transaction analysis using Apache Spark and real-time visualizations**
 
-![Dashboard Preview](https://via.placeholder.com/800x400/1e1e1e/ffffff?text=Dashboard+Preview)
+![Dashboard Preview](IMG/dashboard.png)
 
 </div>
 
 ---
 
-## 🎯 Features
-
-```
-✨ Association Rule Mining      → Discover item relationships
-📊 Interactive Visualizations   → Plotly-powered charts
-⚡ Scalable Processing          → PySpark FP-Growth algorithm
-🌐 Cloud-Ready                  → Runs 100% on Google Colab
-🔓 Zero Setup                   → No local installations needed
-```
-
 <div align="center">
+
+## Analytics Capabilities
+
+| Feature | Description |
+|---------|-------------|
+| **Sales Trends** | Time-series analysis with daily revenue tracking |
+| **Top Products** | Identify best-selling items by revenue |
+| **Geographic Analysis** | Sales distribution across countries |
+| **Basket Analysis** | Discover frequently bought together items |
+| **KPI Metrics** | Real-time revenue, orders, customers, items |
+
 
 ## Tech Stack
 
+Backend
 <table>
 <tr>
 <td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" height="48" alt="Python" />
-<br>Python
-</td>
-<td align="center" width="96">
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="48" height="48" alt="Spark" />
-<br>PySpark
+<br><b>PySpark</b>
+<br>
 </td>
 <td align="center" width="96">
-<img src="https://streamlit.io/images/brand/streamlit-mark-color.svg" width="48" height="48" alt="Streamlit" />
-<br>Streamlit
+<img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" width="48" height="48" alt="Flask" />
+<br><b>Flask</b>
+<br>
 </td>
 <td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="48" height="48" alt="Pandas" />
-<br>Pandas
+<img src="https://spark.apache.org/images/spark-logo-trademark.png" width="65" height="48" alt="FP-Growth" style="object-fit: contain;" />
+<br><b>FP-Growth</b>
+<br>
 </td>
 <td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" width="48" height="48" alt="Colab" />
-<br>Colab
+<img src="https://avatars.githubusercontent.com/u/3862302?s=200&v=4" width="48" height="48" alt="Ngrok" />
+<br><b>Ngrok</b>
+<br>
+</td>
+</tr>
+</table>
+Frontend
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48" height="48" alt="HTML5" />
+<br><b>HTML5</b>
+<br>
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="CSS3" />
+<br><b>CSS3</b>
+<br>
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />
+<br><b>JavaScript</b>
+<br>
+</td>
+<td align="center" width="96">
+<img src="https://www.chartjs.org/img/chartjs-logo.svg" width="48" height="48" alt="Chart.js" />
+<br><b>Chart.js</b>
+<br>
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="Glassmorphism" />
+<br><b>Glassmorphism</b>
+<br>
 </td>
 </tr>
 </table>
@@ -67,41 +102,75 @@
 
 </div>
 
+---
+
 ## Quick Start
 
-### ☁️ Run in Colab (Recommended)
-
+**1. Start the Backend (Google Colab)**
 ```bash
-1. Click "Open in Colab" badge above
-2. Get ngrok token → https://dashboard.ngrok.com/get-started/your-authtoken
-3. Run All Cells (Ctrl+F9)
-4. Access your live dashboard! 🎉
+# Upload retail_analysis_spark.ipynb to Google Colab
+# Run all cells
+# Copy the ngrok URL (e.g., http://xxxx.ngrok-free.app)
 ```
 
-### 💻 Run Locally
-
+**2. Start the Frontend (Local)**
 ```bash
-# Clone repository
-git clone https://github.com/ARUNAGIRINATHAN-K/Retail-Transaction-Analytics.git
-cd retail-basket-analysis
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch dashboard
-streamlit run app.py
+cd "a:\My project\final"
+python app.py
 ```
+
+**3. Access Dashboard**
+```
+Open: http://127.0.0.1:3000
+Paste your ngrok URL and click "Connect"
+Upload your CSV dataset
+```
+
+**Basket Analysis Parameters:**
+- `Min Support`: Minimum frequency threshold (default: 0.01)
+- `Min Confidence`: Minimum rule confidence (default: 0.1)
+
+**Recommended for large datasets:** Increase min_support to 0.05+ to reduce memory usage.
 
 <div align="center">
+
+---
    
 ## Screenshots
 
 
 ### Market Basket Analysis
-![Market Basket](https://via.placeholder.com/600x300/2d2d2d/ffffff?text=Association+Rules)
+![Market Basket](IMG/basket.png)
 
 ### Sales Trends
-![Sales Trends](https://via.placeholder.com/600x300/2d2d2d/ffffff?text=Hourly+Patterns)
+![Sales Trends](IMG/sales.PNG)
+
+---
+
+## Architecture
+
+```
+┌─────────────────┐         ┌──────────────────┐
+│  Local Browser  │ ◄─────► │  Flask Frontend  │
+│   (Dashboard)   │         │   (Port 3000)    │
+└─────────────────┘         └──────────────────┘
+                                     │
+                                     │ HTTP
+                                     ▼
+                            ┌──────────────────┐
+                            │  Ngrok Tunnel    │
+                            └──────────────────┘
+                                     │
+                                     ▼
+                            ┌──────────────────┐
+                            │  Google Colab    │
+                            │  ┌────────────┐  │
+                            │  │   Spark    │  │
+                            │  │   Engine   │  │
+                            │  └────────────┘  │
+                            │  Flask API (5000)│
+                            └──────────────────┘
+```
 
 
 </div>
@@ -111,13 +180,17 @@ streamlit run app.py
 </div>
 --->
 
+<br>
+
+---
+
 <div align="center">
 
 ⭐ If this project helped you, please consider giving it a star!
 
 **Made by ARUNAGIRINATHAN K**
 
-**Built with ❤️ using PySpark & Streamlit**
+**Built with ❤️ using PySpark & Colab**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ARUNAGIRINATHAN-K)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arunagirinathan-k/)
