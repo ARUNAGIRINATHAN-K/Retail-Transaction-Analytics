@@ -1,17 +1,0 @@
-
-Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
-
-
-  You can now view your Streamlit app in your browser.
-
-  Local URL: http://localhost:8504
-  Network URL: http://172.28.0.12:8504
-  External URL: http://34.73.176.129:8504
-
-WARNING: Using incubator modules: jdk.incubator.vector
-Using Spark's default log4j profile: org/apache/spark/log4j2-defaults.properties
-Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-25/12/10 16:59:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-25/12/10 16:59:46 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-[Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 2) / 2]                                                                                
