@@ -8,7 +8,6 @@
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
-![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 **A powerful web-based analytics platform for retail transaction analysis using Apache Spark and real-time visualizations**
@@ -38,12 +37,17 @@ Backend
 <table>
 <tr>
 <td align="center" width="96">
+<img src="https://github.com/ARUNAGIRINATHAN-K/ARUNAGIRINATHAN-K/blob/main/icons/Python-Light.svg" width="48" height="48" alt="Spark" />
+<br><b>PySpark</b>
+<br>
+</td>
+<td align="center" width="96">
 <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" width="48" height="48" alt="Spark" />
 <br><b>PySpark</b>
 <br>
 </td>
 <td align="center" width="96">
-<img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" width="48" height="48" alt="Flask" />
+<img src="https://github.com/ARUNAGIRINATHAN-K/ARUNAGIRINATHAN-K/blob/main/icons/Flask-Light.svg" width="48" height="48" alt="Flask" />
 <br><b>Flask</b>
 <br>
 </td>
@@ -59,7 +63,9 @@ Backend
 </td>
 </tr>
 </table>
-Frontend
+
+## Frontend
+
 <table>
 <tr>
 <td align="center" width="96">
