@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Transaction Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#4dabf7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 17L12 22L22 17" stroke="#4dabf7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M2 12L12 17L22 12" stroke="#4dabf7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>RetailAnalytics</span>
+            </div>
+            <div class="status-indicator" id="status-indicator">
+                <span class="dot"></span> Not Connected
+            </div>
+        </header>
+
+        <main>
+            <section class="config-panel glass-panel">
+                <h2>Configuration</h2>
+                <div class="input-group">
+                    <label for="ngrok-url">Colab Ngrok URL</label>
+                    <input type="text" id="ngrok-url" placeholder="http://xxxx-xx-xx-xx.ngrok-free.app">
+                    <button id="connect-btn" class="primary-btn">Connect</button>
+                </div>
+            </section>
+
+            <!-- Upload Section -->
+            <div class="glass-panel hidden" id="upload-section">
+                <h2><span class="icon">📂</span> Upload Dataset</h2>
+                <div class="upload-area" id="drop-zone">
+                    <div class="upload-icon">☁️</div>
+                    <p>Drag & Drop CSV file here or <span>Browse</span></p>
+                    <input type="file" id="file-input" accept=".csv" hidden>
+                </div>
+                <div id="file-info"></div>
+            </div>
+
+            <!-- KPI Section (Moved Below Upload) -->
+            <div id="kpi-section" class="kpi-grid hidden">
+                <div class="kpi-card">
+                    <h3>Total Revenue</h3>
+                    <p id="kpi-revenue">Loading...</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Total Orders</h3>
+                    <p id="kpi-orders">Loading...</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Total Customers</h3>
+                    <p id="kpi-customers">Loading...</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Items Sold</h3>
+                    <p id="kpi-items">Loading...</p>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="hidden">
+
+                <!-- Main Sales Chart (Full Width) -->
+                <div class="glass-panel chart-container full-width-chart">
+                    <h3>Sales Over Time</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+
+                <!-- Secondary Charts (Side by Side) -->
+                <div class="charts-row">
+                    <div class="glass-panel chart-container">
+                        <h3>Top 5 Products</h3>
+                        <canvas id="topProductsChart"></canvas>
+                    </div>
+                    <div class="glass-panel chart-container">
+                        <h3>Sales by Country</h3>
+                        <canvas id="countryChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Basket Analysis Table -->
+                <div class="glass-panel">
+                    <div class="panel-header">
+                        <h2><span class="icon">🛒</span> Frequently Bought Together</h2>
+                        <div class="controls">
+                            <label>Min Support: <input type="number" id="min-sup" value="0.01" step="0.01"></label>
+                            <label>Min Conf: <input type="number" id="min-conf" value="0.1" step="0.1"></label>
+                            <button id="run-basket-btn" class="primary-btn">Analyze</button>
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table id="basket-table">
+                            <thead>
+                                <tr>
+                                    <th>If Customer Buys...</th>
+                                    <th>They Also Buy...</th>
+                                    <th>Confidence</th>
+                                    <th>Lift</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Populated by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Debug Log for User Feedback -->
+            <div id="debug-log"
+                style="color: #ffd700; background: rgba(0,0,0,0.5); padding: 15px; margin-top: 20px; border-radius: 8px; font-family: monospace; font-size: 0.9em; border: 1px solid #ffd700;">
+                <strong>Debug Log:</strong><br>
+                Waiting for action...
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}?v=debug2"></script>
+</body>
+
+</html>
